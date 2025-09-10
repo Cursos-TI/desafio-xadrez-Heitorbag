@@ -3,9 +3,9 @@
 int main() {
 
     // Simulação de Movimentos
-    // Torre, Bispo e Rainha
+    // Torre, Bispo, Rainha e Cavalo
 
-    // TORRE - usando FOR
+    // TORRE 
     // Move 5 casas para a direita
     int casasTorre = 5;
     printf("Movimento da Torre:\n");
@@ -25,7 +25,7 @@ int main() {
     }
     printf("\n");
 
-    // RAINHA
+    // RAINHA 
     // Move 8 casas para a esquerda
     int casasRainha = 8;
     int j = 1;
@@ -34,6 +34,26 @@ int main() {
         printf("Esquerda\n");
         j++;
     } while (j <= casasRainha);
+    printf("\n");
+
+    // CAVALO 
+    // Movimento em "L":
+    int casasBaixo = 2;
+    int casasEsquerda = 1;
+
+    printf("Movimento do Cavalo:\n");
+
+    // movimenta para baixo
+    for (int x = 1; x <= casasBaixo; x++) {
+        printf("Baixo\n");
+    }
+
+    // movimenta para a esquerda
+    int y = 1;
+    while (y <= casasEsquerda) {
+        printf("Esquerda\n");
+        y++;
+    }
 
     return 0;
 }
